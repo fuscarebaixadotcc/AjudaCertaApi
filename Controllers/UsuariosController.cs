@@ -23,7 +23,7 @@ namespace AjudaCerta.Controllers
 
         private async Task<bool> UsuarioExistente(string email)
         {
-            if (await _context.Usuarios.AnyAsync(u => u.email == email))
+            if (await _context.Usuario.AnyAsync(u => u.email == email))
             {
                 return true;
             }
@@ -48,7 +48,7 @@ namespace AjudaCerta.Controllers
         {
             try
             {
-                Usuario u = await _context.Usuarios
+                Usuario u = await _context.Usuario
                     .FirstOrDefaultAsync(uBusca => uBusca.idUsuario == id);
 
                 return Ok(u);
@@ -78,9 +78,9 @@ namespace AjudaCerta.Controllers
                 }
                 Criptografia.CriarPasswordHash(novoUsuario.senha, out byte[] hash, out byte[] salt);
                 novoUsuario.senha = string.Empty;
-                novoUsuario.senhaHash = hash;
-                novoUsuario.senhaSalt = salt;
-                await _context.Usuarios.AddAsync(novoUsuario);
+                novoUsuario.senha_hash = hash;
+                novoUsuario.senha_salt = salt;
+                await _context.Usuario.AddAsync(novoUsuario);
                 await _context.SaveChangesAsync();
 
                 return Ok(novoUsuario.idUsuario);
@@ -96,22 +96,22 @@ namespace AjudaCerta.Controllers
         {
             try
             {
-                Usuario usuario = await _context.Usuarios
+                Usuario usuario = await _context.Usuario
                     .FirstOrDefaultAsync(u => u.email == credenciais.email);
                 if (usuario == null)
                 {
                     throw new System.Exception("Usuário não encontrado.");
                 }
                 else if (!Criptografia
-                    .VerificarPasswordHash(credenciais.senha, usuario.senhaHash, usuario.senhaSalt))
+                    .VerificarPasswordHash(credenciais.senha, usuario.senha_hash, usuario.senha_salt))
                 {
                     throw new System.Exception("Senha incorreta.");
                 }
                 else
                 {
-                    Pessoa pessoa = await _context.Pessoas
-                        .FirstOrDefaultAsync(p => p.usuario.idUsuario == usuario.idUsuario);
-                    return Ok("Usuário: " + pessoa.nome + " foi autenticado com sucesso.");
+                   // Pessoa pessoa = await _context.Pessoa
+                    //    .FirstOrDefaultAsync(p => p.usuario.idUsuario == usuario.idUsuario);
+                    return Ok("Usuário de id: " + usuario.idUsuario + " foi autenticado com sucesso.");
                 }
             }
             catch (System.Exception ex)

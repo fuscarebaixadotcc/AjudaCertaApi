@@ -3888,11 +3888,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Arquivos\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCerta\\AjudaCerta.csproj",
+      "projectUniqueName": "a:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\AjudaCerta.csproj",
       "projectName": "AjudaCerta",
-      "projectPath": "c:\\Arquivos\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCerta\\AjudaCerta.csproj",
+      "projectPath": "a:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\AjudaCerta.csproj",
       "packagesPath": "C:\\Users\\etechas\\.nuget\\packages\\",
-      "outputPath": "c:\\Arquivos\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCerta\\obj\\",
+      "outputPath": "a:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

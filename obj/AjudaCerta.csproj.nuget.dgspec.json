@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Arquivos\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCerta\\AjudaCerta.csproj": {}
+    "A:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\AjudaCerta.csproj": {}
   },
   "projects": {
-    "C:\\Arquivos\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCerta\\AjudaCerta.csproj": {
+    "A:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\AjudaCerta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Arquivos\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCerta\\AjudaCerta.csproj",
+        "projectUniqueName": "A:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\AjudaCerta.csproj",
         "projectName": "AjudaCerta",
-        "projectPath": "C:\\Arquivos\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCerta\\AjudaCerta.csproj",
+        "projectPath": "A:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\AjudaCerta.csproj",
         "packagesPath": "C:\\Users\\etechas\\.nuget\\packages\\",
-        "outputPath": "C:\\Arquivos\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCerta\\obj\\",
+        "outputPath": "A:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

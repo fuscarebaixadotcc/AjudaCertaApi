@@ -15,21 +15,21 @@ namespace AjudaCerta.Data
 
         }
 
-        public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Pessoa> Pessoas { get; set; }
-        public DbSet<Endereco> Enderecos { get; set; }
-        public DbSet<Doacao> Doacoes { get; set; }
-        public DbSet<Agenda> Agendas { get; set; }
-        public DbSet<Dinheiro> Dinheiros { get; set; }
-        public DbSet<ItemDoacao> ItemDoacoes { get; set; }
-        public DbSet<Produto> Produtos { get; set; }
-        public DbSet<Mobilia> Mobilias { get; set; }
-        public DbSet<Eletrodomestico> Elestrodomesticos { get; set; }
-        public DbSet<Roupa> Roupas { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Pessoa> Pessoa { get; set; }
+        public DbSet<Endereco> Endereco { get; set; }
+        public DbSet<Doacao> Doacao { get; set; }
+        public DbSet<Agenda> Agenda { get; set; }
+        public DbSet<Dinheiro> Dinheiro { get; set; }
+        public DbSet<ItemDoacao> ItemDoacao { get; set; }
+        public DbSet<Produto> Produto { get; set; }
+        public DbSet<Mobilia> Mobilia { get; set; }
+        public DbSet<Eletrodomestico> Elestrodomestico { get; set; }
+        public DbSet<Roupa> Roupa { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Usuario>(u =>{
+           /* modelBuilder.Entity<Usuario>(u =>{
                 u.HasKey(x => x.idUsuario);
                 u.Property(x => x.idUsuario).ValueGeneratedOnAdd();
             });
@@ -46,7 +46,7 @@ namespace AjudaCerta.Data
             user.senhaSalt = salt;
 
             modelBuilder.Entity<Usuario>().HasData(user);
-            
+            */
         }
 
     }

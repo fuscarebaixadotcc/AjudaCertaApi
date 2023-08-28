@@ -12,11 +12,11 @@ namespace AjudaCerta.Models
     public class Usuario
     {
         [Key]
-        public int? idUsuario { get; set; }
+        public int idUsuario { get; set; }
         public string email { get; set; }
         public string senha { get; set; }
-        public byte[]? senhaHash { get; set; }
-        public byte[]? senhaSalt { get; set; } 
+        public byte[]? senha_hash { get; set; }
+        public byte[]? senha_salt { get; set; } 
 
         [NotMapped]
         public int? numeroTentativas { get; set; }
