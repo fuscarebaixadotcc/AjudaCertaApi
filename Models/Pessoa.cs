@@ -13,8 +13,11 @@ namespace AjudaCerta.Models
         public int idPessoa { get; set; }
         public string nome { get; set; }
         public string documento { get; set; }
+        public string telefone { get; set; }
+        public string genero { get; set; }
+        public DateTime dtNasc { get; set; }
         public TipoPessoaEnum tipo { get; set; }
-        public Endereco endereco{ get; set; }
-        public Usuario usuario{ get; set; }
+        public Endereco idEndereco{ get; set; }
+        public Usuario idUsuario{ get; set; }
     }
 }

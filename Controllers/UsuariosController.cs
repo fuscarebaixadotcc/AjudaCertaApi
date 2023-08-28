@@ -64,11 +64,11 @@ namespace AjudaCerta.Controllers
         {
             try
             {
-                /*if (IsEmail(novoUsuario.email))
+                if (!IsEmail(novoUsuario.email))
                 {
                     throw new Exception("Endereço de e-mail inválido.");
                 }
-                else*/ if (await UsuarioExistente(novoUsuario.email))
+                else if (await UsuarioExistente(novoUsuario.email))
                 {
                     throw new System.Exception("Este e-mail já está cadastrado.");
                 }

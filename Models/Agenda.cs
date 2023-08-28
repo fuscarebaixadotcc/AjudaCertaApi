@@ -12,9 +12,9 @@ namespace AjudaCerta.Models
         [Key]
         public int idAgenda { get; set; }
         public DateTime data { get; set; }
-        public Endereco endereco { get; set; }
+        public Endereco idEndereco { get; set; }
         public TipoDoacaoEnum tipo { get; set; }
-        public StatusDoacaoEnum status { get; set; }
-        public Pessoa pessoa { get; set; }
+        public StatusDoacaoEnum statusAgenda { get; set; }
+        public Pessoa idPessoa { get; set; }
     }
 }
