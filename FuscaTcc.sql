@@ -1,7 +1,9 @@
 create database FuscaTcc
 use FuscaTcc;
 
-select * from Usuario
+insert into Pessoa(idPessoa, nome, documento, telefone, genero, idEndereco, idUsuario) values (1,'joao vitor', '44454352879', '11946410819', 'masculino', 40000, 10001)	
+
+select * from Pessoa
 
 create table Usuario(idUsuario int Primary Key IDENTITY(10001,1),
 					senha varchar (25),

@@ -1,33 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "A:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\AjudaCerta.csproj": {}
+    "C:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj": {}
   },
   "projects": {
-    "A:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\AjudaCerta.csproj": {
+    "C:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\AjudaCerta.csproj",
+        "projectUniqueName": "C:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj",
         "projectName": "AjudaCerta",
-        "projectPath": "A:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\AjudaCerta.csproj",
-        "packagesPath": "C:\\Users\\etechas\\.nuget\\packages\\",
-        "outputPath": "A:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\obj\\",
+        "projectPath": "C:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj",
+        "packagesPath": "C:\\Users\\jvsrd\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\etechas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\jvsrd\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -84,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

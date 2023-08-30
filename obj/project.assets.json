@@ -3882,33 +3882,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\etechas\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\jvsrd\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "a:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\AjudaCerta.csproj",
+      "projectUniqueName": "c:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj",
       "projectName": "AjudaCerta",
-      "projectPath": "a:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\AjudaCerta.csproj",
-      "packagesPath": "C:\\Users\\etechas\\.nuget\\packages\\",
-      "outputPath": "a:\\3AI\\JoaoCamila\\TCC\\AjudaCerta-20230822T120419Z-001\\AjudaCertaApi\\obj\\",
+      "projectPath": "c:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj",
+      "packagesPath": "C:\\Users\\jvsrd\\.nuget\\packages\\",
+      "outputPath": "c:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\etechas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\jvsrd\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3965,7 +3956,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
