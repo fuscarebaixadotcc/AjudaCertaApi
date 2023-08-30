@@ -20,7 +20,7 @@ namespace AjudaCertaApi.Controllers
             _context = context;
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetSingle(int id)
         {
             try

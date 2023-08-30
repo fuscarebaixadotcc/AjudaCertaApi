@@ -1,0 +1,27 @@
+Insert Usuario
+
+{
+    "email":"joaod@gmail.com",
+    "senha":"12345678"
+}
+
+Insert Endereco
+
+{
+ "rua":"rua bari, 79",
+ "estado":"são paulo",
+ "cidade":"santo andré",
+ "cep":"02202000"   
+}
+
+Insert Pessoa
+
+{
+    "idPessoa": 1,
+    "nome":"joão vitor",
+    "telefone":"11946410819",
+    "documento":"444.543.528-79",
+    "genero":"masculino",
+    "idUsuario": 10001,
+    "idEndereco": 40000
+}

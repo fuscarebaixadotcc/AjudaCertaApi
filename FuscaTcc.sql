@@ -3,7 +3,7 @@ use FuscaTcc;
 
 insert into Pessoa(idPessoa, nome, documento, telefone, genero, idEndereco, idUsuario) values (1,'joao vitor', '44454352879', '11946410819', 'masculino', 40000, 10001)	
 
-select * from Pessoa
+	
 
 create table Usuario(idUsuario int Primary Key IDENTITY(10001,1),
 					senha varchar (25),
@@ -14,13 +14,13 @@ create table Usuario(idUsuario int Primary Key IDENTITY(10001,1),
 create table Endereco (idEndereco int Primary Key IDENTITY(40000,1),
 						rua varchar (50),
 						estado varchar (30),
-						cep numeric(8),
+						cep varchar(9),
 						cidade varchar(50)
 						)
 						
 create table Pessoa(idPessoa int Primary Key,
                     nome varchar (50),
-					tipo varchar (15),
+					tipo int,
 					documento varchar(14),
 					telefone varchar(15),
 					genero varchar(20),

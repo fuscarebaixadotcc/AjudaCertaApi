@@ -43,9 +43,22 @@ namespace AjudaCertaApi.Controllers
             {
                 if(!Validacao.ValidaCPF(novaPessoa.documento))
                     throw new Exception("CPF inválido.");
-                else if(!Validacao.VerificaMaioridade(novaPessoa.dtNasc))
-                    throw new Exception("O usuário precisa ser maior de idade.");
+               // else if(!Validacao.VerificaMaioridade(novaPessoa.dtNasc))
+               //     throw new Exception("O usuário precisa ser maior de idade.");
                 
+                novaPessoa.Usuario = await _context.Usuario
+                    .FirstOrDefaultAsync(uBusca => uBusca.idUsuario == novaPessoa.idUsuario);
+
+
+                //TESTAR COM O REGISTRO DO ATRIBUTO USUARIO E ENDERECO INVES DE SÓ O ID, ATUALIZAR PRA INT NO BANCO AS OUTRAS ENUMS DE OUTRAS CLASSES
+
+             //   novaPessoa.Usuario = u;
+
+                novaPessoa.Endereco = await _context.Endereco
+                    .FirstOrDefaultAsync(eBusca => eBusca.idEndereco == novaPessoa.idEndereco);
+                
+           //     novaPessoa.Endereco = e;
+
                 await _context.Pessoa.AddAsync(novaPessoa);
                 await _context.SaveChangesAsync();
 
