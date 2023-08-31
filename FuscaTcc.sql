@@ -30,17 +30,17 @@ create table Pessoa(idPessoa int Primary Key,
 					);
 
 create table Agenda(idAgenda int Primary Key,
-					statusAgenda varchar(20),
-					tipo varchar(30),
+					statusAgenda int,
+					tipo int,
 					data date,
 					idPessoa int references Pessoa,
 					idEndereco int references Endereco)
 
 create table Doacao(idDoacao int Primary Key IDENTITY(20000,1),
-					statusDoacao varchar(20),
+					statusDoacao int,
 					idDoacaoOrigem int,
 					data date,
-					tipoDoacao varchar (30),
+					tipoDoacao int,
 					idPessoa int references Pessoa,
 					idAgenda int references Agenda)
 
@@ -55,7 +55,7 @@ create table ItemDoacaoDoado(idDoacao int references Doacao,
 							idItem int references ItemDoacao)
 
 create table Produto (idProduto int Primary Key,
-					tipoProduto varchar(50),
+					tipoProduto int,
 					validade date,
 					idItem int references ItemDoacao)
 
@@ -65,8 +65,8 @@ create table Eletrodomestico (idEletro int Primary Key,
 							idItem int references ItemDoacao)
 
 create table Roupa (idRoupa int Primary Key,
-					fxEtaria varchar(20),
-					genero varchar(20),
+					fxEtaria int,
+					genero int,
 					condicao varchar(20),
 					tamanho varchar(3),
 					idItem int references ItemDoacao)

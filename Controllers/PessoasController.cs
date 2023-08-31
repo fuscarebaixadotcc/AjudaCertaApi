@@ -27,7 +27,16 @@ namespace AjudaCertaApi.Controllers
             try
             {
                 Pessoa p = await _context.Pessoa
+                    //.Include(e => e.idEndereco)
+                    //.Include(u => u.idUsuario)
                     .FirstOrDefaultAsync(pBusca => pBusca.idPessoa == id);
+                
+                p.Usuario = await _context.Usuario
+                    .FirstOrDefaultAsync(uBusca => uBusca.idUsuario == p.idUsuario);
+                
+                p.Endereco = await _context.Endereco
+                    .FirstOrDefaultAsync(eBusca => eBusca.idEndereco == p.idEndereco);
+                
                 return Ok(p);
             }
             catch (Exception ex)
@@ -50,7 +59,7 @@ namespace AjudaCertaApi.Controllers
                     .FirstOrDefaultAsync(uBusca => uBusca.idUsuario == novaPessoa.idUsuario);
 
 
-                //TESTAR COM O REGISTRO DO ATRIBUTO USUARIO E ENDERECO INVES DE SÓ O ID, ATUALIZAR PRA INT NO BANCO AS OUTRAS ENUMS DE OUTRAS CLASSES
+                
 
              //   novaPessoa.Usuario = u;
 
