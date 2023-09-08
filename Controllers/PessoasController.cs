@@ -27,16 +27,7 @@ namespace AjudaCertaApi.Controllers
             try
             {
                 Pessoa p = await _context.Pessoa
-                    //.Include(e => e.idEndereco)
-                    //.Include(u => u.idUsuario)
                     .FirstOrDefaultAsync(pBusca => pBusca.idPessoa == id);
-                
-                p.Usuario = await _context.Usuario
-                    .FirstOrDefaultAsync(uBusca => uBusca.idUsuario == p.idUsuario);
-                
-                p.Endereco = await _context.Endereco
-                    .FirstOrDefaultAsync(eBusca => eBusca.idEndereco == p.idEndereco);
-                
                 return Ok(p);
             }
             catch (Exception ex)
@@ -54,19 +45,6 @@ namespace AjudaCertaApi.Controllers
                     throw new Exception("CPF inválido.");
                // else if(!Validacao.VerificaMaioridade(novaPessoa.dtNasc))
                //     throw new Exception("O usuário precisa ser maior de idade.");
-                
-                novaPessoa.Usuario = await _context.Usuario
-                    .FirstOrDefaultAsync(uBusca => uBusca.idUsuario == novaPessoa.idUsuario);
-
-
-                
-
-             //   novaPessoa.Usuario = u;
-
-                novaPessoa.Endereco = await _context.Endereco
-                    .FirstOrDefaultAsync(eBusca => eBusca.idEndereco == novaPessoa.idEndereco);
-                
-           //     novaPessoa.Endereco = e;
 
                 await _context.Pessoa.AddAsync(novaPessoa);
                 await _context.SaveChangesAsync();
