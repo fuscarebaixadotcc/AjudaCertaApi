@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zbcBckFCbINtceMsKtorlq6w3I9JjzpIR3cnkkVhsTyCGxYBhBc482SKubLUTwiVOZKLC+7hRTBsdYAydQ75+A==",
+  "dgSpecHash": "8meS5rwLQI3Fz3Vv8KpabqKf4k428/uctFyX0LMqXQ0SF1el6iEj9naROtP1ypqWwxaOmufdaST0L2ziaVpNBA==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj",
+  "projectFilePath": "c:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jvsrd\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\jvsrd\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

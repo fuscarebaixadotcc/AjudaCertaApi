@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj": {}
+    "c:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj": {
+    "c:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj",
+        "projectUniqueName": "c:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj",
         "projectName": "AjudaCerta",
-        "projectPath": "C:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj",
+        "projectPath": "c:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\AjudaCerta.csproj",
         "packagesPath": "C:\\Users\\jvsrd\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\obj\\",
+        "outputPath": "c:\\Projetos\\AjudaCertaTCC\\AjudaCertaApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jvsrd\\AppData\\Roaming\\NuGet\\NuGet.Config"

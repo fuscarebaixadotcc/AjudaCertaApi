@@ -19,7 +19,7 @@ create table Endereco (idEndereco int Primary Key IDENTITY(40000,1),
 						cidade varchar(50)
 						)
 						
-create table Pessoa(idPessoa int Primary Key,
+create table Pessoa(idPessoa int Primary Key IDENTITY(1,1),
                     nome varchar (50),
 					tipo int,
 					documento varchar(14),
@@ -30,7 +30,7 @@ create table Pessoa(idPessoa int Primary Key,
 					idUsuario int foreign key references Usuario (idUsuario)
 					);
 
-create table Agenda(idAgenda int Primary Key,
+create table Agenda(idAgenda int Primary Key IDENTITY(1,1),
 					statusAgenda int,
 					tipo int,
 					data date,
@@ -45,34 +45,34 @@ create table Doacao(idDoacao int Primary Key IDENTITY(20000,1),
 					idPessoa int references Pessoa,
 					idAgenda int references Agenda)
 
-create table Dinheiro(idDinheiro int Primary key, --id da doacao
+create table Dinheiro(idDinheiro int Primary key IDENTITY(1,1), --id da doacao
 					valor numeric(8,2))
 
-create table ItemDoacao (idItem int Primary Key,
+create table ItemDoacao (idItem int Primary Key IDENTITY(1,1),
 						descricao varchar(100),
 						nome varchar(50))
 
 create table ItemDoacaoDoado(idDoacao int references Doacao,
 							idItem int references ItemDoacao)
 
-create table Produto (idProduto int Primary Key,
+create table Produto (idProduto int Primary Key IDENTITY(1,1),
 					tipoProduto int,
 					validade date,
 					idItem int references ItemDoacao)
 
-create table Eletrodomestico (idEletro int Primary Key,
+create table Eletrodomestico (idEletro int Primary Key IDENTITY(1,1),
 							condicao varchar (20),
 							medida varchar(20),
 							idItem int references ItemDoacao)
 
-create table Roupa (idRoupa int Primary Key,
+create table Roupa (idRoupa int Primary Key IDENTITY(1,1),
 					fxEtaria int,
 					genero int,
 					condicao varchar(20),
 					tamanho varchar(3),
 					idItem int references ItemDoacao)
 
-create table Mobilia (idMobilia int Primary Key,
+create table Mobilia (idMobilia int Primary Key IDENTITY(1,1),
 					tipo varchar(30),
 					condicao varchar(20),
 					medida varchar(20),
