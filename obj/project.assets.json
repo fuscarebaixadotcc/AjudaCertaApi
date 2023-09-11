@@ -3888,11 +3888,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CamilaJoao\\AjudaCertaApi\\AjudaCerta.csproj",
+      "projectUniqueName": "c:\\Arquivos\\3AI\\AjudaCertaApi\\AjudaCerta.csproj",
       "projectName": "AjudaCerta",
-      "projectPath": "D:\\CamilaJoao\\AjudaCertaApi\\AjudaCerta.csproj",
+      "projectPath": "c:\\Arquivos\\3AI\\AjudaCertaApi\\AjudaCerta.csproj",
       "packagesPath": "C:\\Users\\etechas\\.nuget\\packages\\",
-      "outputPath": "D:\\CamilaJoao\\AjudaCertaApi\\obj\\",
+      "outputPath": "c:\\Arquivos\\3AI\\AjudaCertaApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3908,6 +3908,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3964,7 +3965,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
       }
     }
   }

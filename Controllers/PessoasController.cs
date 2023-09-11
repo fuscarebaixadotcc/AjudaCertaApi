@@ -41,6 +41,7 @@ namespace AjudaCertaApi.Controllers
             }
         }
 
+
         [HttpPost("RegistrarPF")]
         public async Task<IActionResult> Add(Pessoa novaPessoa)
         {
@@ -48,8 +49,8 @@ namespace AjudaCertaApi.Controllers
             {
                 if(!Validacao.ValidaCPF(novaPessoa.documento))
                     throw new Exception("CPF inválido.");
-               // else if(!Validacao.VerificaMaioridade(novaPessoa.dtNasc))
-               //     throw new Exception("O usuário precisa ser maior de idade.");
+                else if(!Validacao.VerificaMaioridade(novaPessoa.dtNasc))
+                    throw new Exception("O usuário precisa ser maior de idade.");
 
                 await _context.Pessoa.AddAsync(novaPessoa);
                 await _context.SaveChangesAsync();

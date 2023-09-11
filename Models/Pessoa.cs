@@ -26,5 +26,7 @@ namespace AjudaCerta.Models
         public Endereco Endereco{ get; set; }
         [NotMapped]
         public Usuario Usuario{ get; set; }
+        public List<Agenda> Agendas { get; set; } 
+        public List<Doacao> Doacoes { get; set; }
     }
 }
