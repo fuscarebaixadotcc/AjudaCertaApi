@@ -28,6 +28,11 @@ namespace AjudaCertaApi.Controllers
             {
                 Pessoa p = await _context.Pessoa
                     .FirstOrDefaultAsync(pBusca => pBusca.idPessoa == id);
+                p.Usuario = await _context.Usuario
+                            .FirstOrDefaultAsync(uBusca => uBusca.idUsuario == p.idUsuario);
+                p.Endereco = await _context.Endereco
+                            .FirstOrDefaultAsync(eBusca => eBusca.idEndereco == p.idEndereco);
+                    
                 return Ok(p);
             }
             catch (Exception ex)
