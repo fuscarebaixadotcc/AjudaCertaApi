@@ -17,11 +17,10 @@ Insert Endereco
 Insert Pessoa
 
 {
-    "idPessoa": 1,
     "nome":"joão vitor",
     "telefone":"11946410819",
     "documento":"444.543.528-79",
     "genero":"masculino",
-    "idUsuario": 10001,
-    "idEndereco": 40000
+    "idUsuario":10001,
+    "idEndereco":40000
 }

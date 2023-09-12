@@ -3,7 +3,7 @@ drop database FuscaTcc
 use FuscaTcc;
 
 insert into Pessoa(idPessoa, nome, documento, telefone, genero, idEndereco, idUsuario) values (1,'joao vitor', '44454352879', '11946410819', 'masculino', 40000, 10001)	
-
+select * from Agenda
 	
 
 create table Usuario(idUsuario int Primary Key IDENTITY(10001,1),
@@ -36,6 +36,8 @@ create table Agenda(idAgenda int Primary Key IDENTITY(1,1),
 					data date,
 					idPessoa int references Pessoa,
 					idEndereco int references Endereco)
+
+insert into Agenda (statusAgenda, tipo, data, idEndereco, idPessoa) values (1,1, '2022-09-11', 40000,1)
 
 create table Doacao(idDoacao int Primary Key IDENTITY(20000,1),
 					statusDoacao int,

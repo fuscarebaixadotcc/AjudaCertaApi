@@ -9,6 +9,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AjudaCertaApi.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class AgendasController : ControllerBase
     {
         private readonly DataContext _context;
@@ -37,13 +39,13 @@ namespace AjudaCertaApi.Controllers
             }   
         }
 
-        [HttpPost("RegistrarAgenda")]
+        [HttpPost("Registrar")]
         public async Task<IActionResult> RegistrarAgenda(Agenda novaAgenda)
         {
             try
             {
                 await _context.Agenda.AddAsync(novaAgenda);
-                _context.SaveChangesAsync();
+                await _context.SaveChangesAsync();
 
                 return Ok(novaAgenda.idAgenda);
             }
