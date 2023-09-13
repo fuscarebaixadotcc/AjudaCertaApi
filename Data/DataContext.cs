@@ -22,6 +22,7 @@ namespace AjudaCerta.Data
         public DbSet<Agenda> Agenda { get; set; }
         public DbSet<Dinheiro> Dinheiro { get; set; }
         public DbSet<ItemDoacao> ItemDoacao { get; set; }
+        public DbSet<ItemDoacaoDoado> ItemDoacaoDoado { get; set; }
         public DbSet<Produto> Produto { get; set; }
         public DbSet<Mobilia> Mobilia { get; set; }
         public DbSet<Eletrodomestico> Elestrodomestico { get; set; }
@@ -29,6 +30,11 @@ namespace AjudaCerta.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Dinheiro>()
+                .Property(d => d.idDinheiro)
+                .ValueGeneratedNever();
+            modelBuilder.Entity<ItemDoacaoDoado>()
+                .HasKey(idd => idd.idDoacao, idd.idItem);
            /* modelBuilder.Entity<Usuario>(u =>{
                 u.HasKey(x => x.idUsuario);
                 u.Property(x => x.idUsuario).ValueGeneratedOnAdd();

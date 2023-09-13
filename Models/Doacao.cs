@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 using AjudaCerta.Models.Enuns;
+using AjudaCerta.Models;
 
 namespace AjudaCerta.Models
 {
@@ -13,14 +14,16 @@ namespace AjudaCerta.Models
         [Key]
         public int idDoacao { get; set; }
         public DateTime data { get; set; }
-        public int idPessoa { get; set; }
-        [NotMapped]
+        [JsonIgnore]
         public Pessoa Pessoa{ get; set; }
         public StatusDoacaoEnum statusDoacao { get; set; }
         public TipoDoacaoEnum tipoDoacao { get; set; }
         public StatusDoacaoEnum idDoacaoOrigem { get; set; }
-        [NotMapped]
+        [JsonIgnore]
         public Agenda Agenda { get; set; }
-        public int idAgenda { get; set; }
+        [JsonIgnore]
+        public Dinheiro? dinheiro { get; set; }
+        public List<ItemDoacaoDoado> ItemDoacaoDoado { get; set; }
+
     }
 }

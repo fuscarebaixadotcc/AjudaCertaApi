@@ -12,5 +12,6 @@ namespace AjudaCerta.Models
         public int idItem { get; set; }
         public string nome { get; set; }
         public string descricao { get; set; }
+        public List<ItemDoacaoDoado> ItemDoacaoDoado { get; set; }
     }
 }

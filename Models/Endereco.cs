@@ -14,6 +14,7 @@ namespace AjudaCerta.Models
         public string cidade { get; set; }
         public string estado { get; set; }
         public string cep { get; set; }
+        public List<Pessoa> Pessoas { get; set; }
         public List<Agenda> Agendas { get; set; }
     }
 }

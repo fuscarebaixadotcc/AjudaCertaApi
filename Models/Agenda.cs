@@ -15,13 +15,10 @@ namespace AjudaCerta.Models
         public DateTime data { get; set; }
         public TipoDoacaoEnum tipo { get; set; }
         public StatusDoacaoEnum statusAgenda { get; set; }
-        public int idPessoa { get; set; }
-        public int idEndereco { get; set; }
-        [NotMapped]
         public Pessoa Pessoa { get; set; }
-        [NotMapped]
         public Endereco Endereco { get; set; }
-
+        public Doacao Doacao { get; set; }
+        public int idDoacao { get; set; }
 
     }
 }

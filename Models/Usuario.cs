@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using AjudaCerta.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace AjudaCerta.Models
@@ -22,8 +23,6 @@ namespace AjudaCerta.Models
         public int? numeroTentativas { get; set; }
         [NotMapped]
         public Boolean? bloqueado { get; set; }
-
-        [NotMapped]
-        public Pessoa? pessoa{ get; set; }
+        public List<Pessoa> Pessoas;
     }
 }

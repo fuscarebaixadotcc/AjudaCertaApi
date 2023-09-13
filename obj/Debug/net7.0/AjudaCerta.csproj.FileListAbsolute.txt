@@ -487,3 +487,13 @@ D:\CamilaJoao\AjudaCertaApi\obj\Debug\net7.0\refint\AjudaCerta.dll
 D:\CamilaJoao\AjudaCertaApi\obj\Debug\net7.0\AjudaCerta.pdb
 D:\CamilaJoao\AjudaCertaApi\obj\Debug\net7.0\AjudaCerta.genruntimeconfig.cache
 D:\CamilaJoao\AjudaCertaApi\obj\Debug\net7.0\ref\AjudaCerta.dll
+D:\3AI\AjudaCertaApi\obj\Debug\net7.0\AjudaCerta.csproj.AssemblyReference.cache
+D:\3AI\AjudaCertaApi\obj\Debug\net7.0\AjudaCerta.GeneratedMSBuildEditorConfig.editorconfig
+D:\3AI\AjudaCertaApi\obj\Debug\net7.0\AjudaCerta.AssemblyInfoInputs.cache
+D:\3AI\AjudaCertaApi\obj\Debug\net7.0\AjudaCerta.AssemblyInfo.cs
+D:\3AI\AjudaCertaApi\obj\Debug\net7.0\AjudaCerta.csproj.CoreCompileInputs.cache
+D:\3AI\AjudaCertaApi\obj\Debug\net7.0\AjudaCerta.MvcApplicationPartsAssemblyInfo.cs
+D:\3AI\AjudaCertaApi\obj\Debug\net7.0\AjudaCerta.MvcApplicationPartsAssemblyInfo.cache
+D:\3AI\AjudaCertaApi\obj\Debug\net7.0\AjudaCerta.dll
+D:\3AI\AjudaCertaApi\obj\Debug\net7.0\refint\AjudaCerta.dll
+D:\3AI\AjudaCertaApi\obj\Debug\net7.0\AjudaCerta.pdb

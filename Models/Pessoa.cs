@@ -18,13 +18,7 @@ namespace AjudaCerta.Models
         public string genero { get; set; }
         public DateTime dtNasc { get; set; }
         public TipoPessoaEnum tipo { get; set; }
-
-        public int idEndereco { get; set; }
-
-        public int idUsuario {get; set;}
-        [NotMapped]
         public Endereco Endereco{ get; set; }
-        [NotMapped]
         public Usuario Usuario{ get; set; }
         public List<Agenda> Agendas { get; set; } 
         public List<Doacao> Doacoes { get; set; }
